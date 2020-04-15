@@ -1,44 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<title>Document</title>
+	<style>
+		p,span{
+			background: lightblue;
+			border: 2px solid ;
+			line-height: 3;
+			width: 300px;
 
-	<head>
-		<meta charset="utf-8" />
-		<title>v-on:事件修饰符</title>
+		}
 
-		<script src="js/vuejs-2.5.16.js"></script>
-	</head>
-
-	<body>
-		<div id="app">
-			<!-- <form action="http://www.itcast.cn" onsubmit="return checkform()">
-				<input type="submit" value="Go"> 
-			</form> -->
-			<form  v-on:submit.prevent action="http://www.itcast.cn" >
-				<input type="submit" value="Go"> 
-			</form>
-			
-			<div v-on:click="fun">
-				<a v-on:click.stop href="http://www.itcast.cn">itcast</a>
-			</div>
-		</div>
-	</body>
-	<script>
-		//view model
-		new Vue({
-			el:"#app",
-			methods:{
-				fun:function(){
-					alert("haha");
-				}
-			}
-		});
-		
-		/* function checkform(){
-			return false;
-		} */
-		
-		
-		
-	</script>
-
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cupiditate enim nisi rem hic iure voluptatum, excepturi possimus dolorem vel fugiat commodi perspiciatis voluptate repellendus nostrum vero illo tenetur! Mollitia!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum optio nemo ratione veritatis voluptate reiciendis quo possimus molestiae harum, exercitationem consequatur cupiditate nisi eaque ipsa iure, praesentium impedit ad quibusdam?</p>
+	<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatibus architecto! Omnis, nobis. Praesentium provident illo beatae voluptate accusantium ex repudiandae, dolor expedita, odio incidunt, veniam officia corrupti aperiam fugiat! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, saepe? Hic, minus perspiciatis! Placeat rerum tenetur velit assumenda dolor corrupti quae beatae accusamus quo! Similique incidunt nesciunt repellendus reprehenderit doloribus?</span>
+</body>
 </html>

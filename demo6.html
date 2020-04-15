@@ -1,28 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<title>Document</title>
+	<style>
+		.pager a{
+			border: 1px solid #e1e2e3;
+			/* background: #f2f8ff; */
+			height: 36px;
+			width: 36px;
+			text-align: center;
+			display: inline-block;
+			text-decoration: none;
+			line-height: 34px;
+			color: #38f;
 
-	<head>
-		<meta charset="utf-8" />
-		<title>v-on:按键修饰符</title>
 
-		<script src="js/vuejs-2.5.16.js"></script>
-	</head>
 
-	<body>
-		<div id="app">
-			<input type="text" @keydown.enter="fun"/>
-		</div>
-	</body>
-	<script>
-		//view model
-		new Vue({
-			el:"#app",
-			methods:{
-				fun:function(){
-					alert("aaa");
-				}
-			}
-		});
-	</script>
+		}
 
+		.pager a:active{
+
+			color: rebeccapurple;
+		}
+
+		.pager a:hover{
+
+			border: 1px solid #38f;
+			background: #f2f8ff;
+		}
+
+		.pager{
+			width: 100%;
+			padding-top: 200px;
+			margin: 0 auto;
+			/* background: lightblue; */
+			/* border: 1px solid red; */
+			text-align: center;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="pager">
+		<a href="">1</a>
+		<a href="">2</a>
+		<a href="">3</a>
+		<a href="">4</a>
+		<a href="">5</a>
+		<a href="">6</a>
+		<a href="">7</a>
+		<a href="">8</a>
+		<a href="">9</a>
+		<a href="">10</a>
+	</div>
+</body>
 </html>
