@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<title>Document</title>
+	<style>
+		.content li{
+			border-bottom: 1px dashed #ccc;
+			line-height: 2;
+			border-left: 3px solid #008c8c;
+			padding-left: 10px;
+			margin: 1em auto;
+			width: 200px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 
-	<head>
-		<meta charset="utf-8" />
-		<title>v-on:mouseover</title>
-		<style>
-			#div1 {
-				background-color: red;
-			}
-		</style>
-		<script src="js/vue.js"></script>
-	</head>
+		}
 
-	<body>
-		<div id="app">
-			<div @mouseover="fun1" id="div1">
-				<textarea @mouseover="fun2($event)">这是一个文件域</textarea>
-			</div>
-		</div>
-	</body>
-	<script>
-		//view model
-		new Vue({
-			el: "#app",
-			methods:{
-				fun1:function(){
-					alert("div......");
-				},
-				fun2:function(e){
-					alert("textarea......");
-					e.stopPropagation();
-				}
-			}
-		});
-	</script>
+		.content{
+			margin-top: 200px;
 
+		}
+
+	</style>
+</head>
+<body>
+	<div class="content">
+		<ul>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod optio at ut!</li>
+			<li>Iusto mollitia deserunt neque beatae, modi consectetur officiis incidunt ullam nulla quisquam?</li>
+			<li>Vel, veniam! Possimus facilis perferendis dolore doloremque, quaerat accusamus iure laudantium molestias!</li>
+			<li>Accusantium adipisci sunt sequi totam voluptatem obcaecati. Voluptatibus quia fugiat deleniti nemo.</li>
+			<li>Quisquam dolore perspiciatis maiores aliquam quidem similique nihil sit dolorem totam? Quia.</li>
+			<li>Adipisci officiis cumque, nulla itaque iste sapiente ut dolores ipsam ex tempora?</li>
+			<li>Id nihil voluptatem voluptatum pariatur distinctio animi, accusamus nam voluptate et incidunt?</li>
+			<li>Adipisci, officia laboriosam ratione qui nostrum alias aliquam corporis repudiandae harum quasi.</li>
+		</ul>
+	</div>
+</body>
 </html>
