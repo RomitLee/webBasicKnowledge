@@ -6,37 +6,55 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<title>Document</title>
 	<style>
+
+		.container {
+            padding-top:120px;
+
+        }
         .container li{
             line-height: 50px;
             height: 50px;
             margin: 0 auto;
-            text-align: center;
+			text-align: center;
             width: 200px;
             color: #a7a7a7;
 			background: #2d2e36;
-            box-sizing: border-box;
+            /* box-sizing: border-box; */
             border-bottom: 1px solid #a7a7a7;
             
 
-        }
+		}
 
-        .container {
-            margin-top:0 120px;
+		/* .clearfix::after{
+    		content: "";
+    		display: block;
+    		clear: both;
 
-        }
+		} */
 
-        body{
-            padding: 0 120px;
-            background:a7a7a7
+		/* .containe a{
+			display: block;
+		} */
+		
+		.container .topnav>li:hover{
+			color:#2d2e36;
+			background:#a7a7a7;
+			
 
-        }
+		}
+
+        
+
+       
+		
+
 
     </style>
 </head>
 <body>
 	<div class="container">
-        <ul>
-			<li><a href="demo1.html">demo1</a></li>
+        <ul class="topnav clearfix">
+			<li class="containerLi"><a href="demo1.html">demo1</a></li>
 			<li><a href="demo2.html">demo2</a></li>
 			<li><a href="demo3.html">demo3</a></li>
 			<li><a href="demo4.html">demo4</a></li>
@@ -47,6 +65,8 @@
 			<li><a href="demo9.html">demo9</a></li>
 			<li><a href="demo10.html">demo10</a></li>
         </ul>
-    </div>
+	</div>
+	
+	
 </body>
 </html>
