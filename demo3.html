@@ -6,8 +6,36 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/demo3.css">
+	<style>
+		.container1{
+			width: 400px;
+			height: 400px;
+			border: 3px solid;
+			/* float: left; */
+			
+
+		}
+
+		.container2{
+			width: 400px;
+			height: 400px;
+			float: left;
+			background: lightblue;
+			
+
+		}
+
+	</style>
 </head>
 <body>
-	<span></span>
+	<!-- 当一个元素浮动后，一定会更改dispaly的属性为块盒 block -->
+	<div class="container1">Lorem ipsum dolor sit.</div>
+
+	<div class="container2">
+		<div class="left"></div>
+		<div class="right"></div>
+
+	</div>
+	
 </body>
 </html>
