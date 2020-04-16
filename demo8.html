@@ -6,6 +6,18 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<title>Document</title>
 	<style>
+		body{
+			color: #333;
+
+		}
+
+		.clearfix::after{
+			content: "";
+			display: block;
+			clear: both;
+
+		}
+
 		.main{
 
 			line-height: 1.5;
@@ -35,12 +47,84 @@
 		}
 
 		.main .container{
-			width: 300px;
-			height: 300px;
-			background: red;
-			/* margin: 0 auto; */
+			width: 1120px;
+			
+			margin: 0 auto;
 
 		}
+
+		.main .container .choose-area{
+			border: 1px solid #e5e5e5;
+			margin: 40px 0;
+			font-size: 14px;
+			line-height: 30px;
+			padding: 0 30px;
+
+		}
+
+		.main .container .choose-area .choose-item{
+			margin: 1em 0;
+			border-bottom: 1px dotted #e5e5e5;
+		}
+
+		.main .container .choose-area .choose-item.noline{
+
+			border: none;
+		}
+
+		.main .container .choose-area .choose-item .left{
+			float: left;
+			
+			color: #999;
+			
+		}
+
+		.main .container .choose-area .choose-item .right{
+			float: left;
+			
+			width: 1000px;
+		}
+
+		.main .container .choose-area .choose-item .right li{
+			float: left;
+			margin: 0 9px;
+			padding: 0 6px;
+			
+			
+		}
+
+		.main .container .choose-area .choose-item .right li:hover{
+
+			color: #ef4238;
+		}
+
+		.main .container .choose-area .choose-item .right li.select{
+			background: #ef4238;
+			color: #fff;
+			border-radius: 15px;
+
+		}
+
+		.main .container .movies .movie-item{
+
+			float: left;
+			width: 160px;
+			margin: 10px 32px 10px 0;
+		} 
+
+		.main .container .movies .movie-item:nth-child(6n){
+
+			margin-right: 0;
+		}
+
+		.main .container .movies .movie-item .poster a img{
+			/* object-fit: cover; */
+			width: 100%;
+			/* height: 260px; */
+
+		}
+
+
 
 	</style>
 </head>
@@ -52,10 +136,256 @@
 			<a href="">即将上映</a>
 			<a href="">经典影片</a>
 		</nav>
-		<dic class="container">
+		<div class="container">
+			<div class="choose-area">
+				<div class="choose-item clearfix">
+					 <div class="left">类型：</div>
+					 <div class="right">
+						<ul>
+							<li class="select"><a href="">Lorem.</a></li>
+							<li><a href="">Iste.</a></li>
+							<li><a href="">Vel.</a></li>
+							<li><a href="">Ducimus?</a></li>
+							<li><a href="">Numquam?</a></li>
+							<li><a href="">Distinctio!</a></li>
+							<li><a href="">Dolor!</a></li>
+							<li><a href="">Sed.</a></li>
+							<li><a href="">Sed!</a></li>
+							<li><a href="">Fugiat?</a></li>
+							<li><a href="">Ullam?</a></li>
+							<li><a href="">Quod!</a></li>
+							<li><a href="">Minima!</a></li>
+							<li><a href="">Veniam!</a></li>
+							<li><a href="">Ab?</a></li>
+							<li><a href="">Deserunt.</a></li>
+							<li><a href="">Aliquid.</a></li>
+							<li><a href="">Suscipit.</a></li>
+							<li><a href="">Consequuntur.</a></li>
+							<li><a href="">Facere.</a></li>
+							<li><a href="">Deserunt.</a></li>
+							<li><a href="">Aliquid.</a></li>
+							<li><a href="">Suscipit.</a></li>
+							<li><a href="">Consequuntur.</a></li>
+							<li><a href="">Facere.</a></li>
+						</ul>
+					 </div>
+				</div>
+				<div class="choose-item clearfix">
+					<div class="left">区域：</div>
+					<div class="right">
+					   <ul>
+						   <li class="select"><a href="">Lorem.</a></li>
+						   <li><a href="">Iste.</a></li>
+						   <li><a href="">Vel.</a></li>
+						   <li><a href="">Ducimus?</a></li>
+						   <li><a href="">Numquam?</a></li>
+						   <li><a href="">Distinctio!</a></li>
+						   <li><a href="">Dolor!</a></li>
+						   <li><a href="">Sed.</a></li>
+						   <li><a href="">Sed!</a></li>
+						   <li><a href="">Fugiat?</a></li>
+						   <li><a href="">Ullam?</a></li>
+						   <li><a href="">Quod!</a></li>
+						   <li><a href="">Minima!</a></li>
+						   <li><a href="">Veniam!</a></li>
+						   <li><a href="">Ab?</a></li>
+						   <li><a href="">Deserunt.</a></li>
+						   <li><a href="">Aliquid.</a></li>
+						   <li><a href="">Suscipit.</a></li>
+						   <li><a href="">Consequuntur.</a></li>
+						   <li><a href="">Facere.</a></li>
+						   <li><a href="">Deserunt.</a></li>
+							<li><a href="">Aliquid.</a></li>
+							<li><a href="">Suscipit.</a></li>
+							<li><a href="">Consequuntur.</a></li>
+							<li><a href="">Facere.</a></li>
+					   </ul>
+					</div> 
+			   </div>
+			   <div class="choose-item clearfix noline">
+				<div class="left">年代：</div>
+				<div class="right">
+				   <ul>
+					   <li class="select"><a href="">Lorem.</a></li>
+					   <li><a href="">Iste.</a></li>
+					   <li><a href="">Vel.</a></li>
+					   <li><a href="">Ducimus?</a></li>
+					   <li><a href="">Numquam?</a></li>
+					   <li><a href="">Distinctio!</a></li>
+					   <li><a href="">Dolor!</a></li>
+					   <li><a href="">Sed.</a></li>
+					   <li><a href="">Sed!</a></li>
+					   <li><a href="">Fugiat?</a></li>
+					   <li><a href="">Ullam?</a></li>
+					   <li><a href="">Quod!</a></li>
+					   <li><a href="">Minima!</a></li>
+					   <li><a href="">Veniam!</a></li>
+					   <li><a href="">Ab?</a></li>
+					   <li><a href="">Deserunt.</a></li>
+					   <li><a href="">Aliquid.</a></li>
+					   <li><a href="">Suscipit.</a></li>
+					   <li><a href="">Consequuntur.</a></li>
+					   <li><a href="">Facere.</a></li>
+				   </ul>
+				</div>
+		   </div>
 
+			</div>
 
-		</dic>
+			<div class="movies">
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie1.jpg" alt=""></a></div>
+					<div class="name"><a href="">唐人街探案3</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie2.jpg" alt=""></a></div>
+					<div class="name"><a href="">姜子牙</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie3.jpg" alt=""></a></div>
+					<div class="name"><a href="">你好 世界</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie4.jpg" alt=""></a></div>
+					<div class="name"><a href="">狂野大陆</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie5.jpg" alt=""></a></div>
+					<div class="name"><a href="">夺冠</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie6.jpg" alt=""></a></div>
+					<div class="name"><a href="">急先锋</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie7.jpg" alt=""></a></div>
+					<div class="name"><a href="">紧急救援</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie8.jpg" alt=""></a></div>
+					<div class="name"><a href="">刺猬索尼克</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie9.jpg" alt=""></a></div>
+					<div class="name"><a href="">通往春天的列车</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie10.jpg" alt=""></a></div>
+					<div class="name"><a href="">爵迹Ⅱ</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie11.jpg" alt=""></a></div>
+					<div class="name"><a href="">赤狐书生</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie12.jpg" alt=""></a></div>
+					<div class="name"><a href="">乔乔的异想世界</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie13.jpg" alt=""></a></div>
+					<div class="name"><a href="">坏男孩（郑立鹏）</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie14.jpg" alt=""></a></div>
+					<div class="name"><a href="">刺猬小说家</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie15.jpg" alt=""></a></div>
+					<div class="name"><a href="">拆弹专家</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie16.jpg" alt=""></a></div>
+					<div class="name"><a href="">真假美猴王</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie17.jpg" alt=""></a></div>
+					<div class="name"><a href="">一百零八</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie18.jpg" alt=""></a></div>
+					<div class="name"><a href="">我在时间尽头等你</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie19.jpg" alt=""></a></div>
+					<div class="name"><a href="">芥麦生长</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie20.jpg" alt=""></a></div>
+					<div class="name"><a href="">秘密访客</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie21.jpg" alt=""></a></div>
+					<div class="name"><a href="">怒火</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie22.jpg" alt=""></a></div>
+					<div class="name"><a href="">阴阳师</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie23.jpg" alt=""></a></div>
+					<div class="name"><a href="">危险记忆</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie24.jpg" alt=""></a></div>
+					<div class="name"><a href="">婚姻故事</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie25.jpg" alt=""></a></div>
+					<div class="name"><a href="">北平会馆</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie26.jpg" alt=""></a></div>
+					<div class="name"><a href="">李娜</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie27.jpg" alt=""></a></div>
+					<div class="name"><a href="">泰坦尼克号上的幸存者</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie28.jpg" alt=""></a></div>
+					<div class="name"><a href="">她</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie29.jpg" alt=""></a></div>
+					<div class="name"><a href="">合法伴侣</a></div>
+					<div class="score">9.4</div>
+				</div>
+				<div class="movie-item">
+					<div class="poster"><a href=""><img src="./img/movie30.jpg" alt=""></a></div>
+					<div class="name"><a href="">21谋杀</a></div>
+					<div class="score">9.4</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 	
