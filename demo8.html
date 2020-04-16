@@ -1,36 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<title>Document</title>
+	<style>
+		.main{
 
-	<head>
-		<meta charset="utf-8" />
-		<title>v-model</title>
-		<script src="js/vue.js"></script>
-	</head>
+			line-height: 1.5;
+		}
 
-	<body>
-		<div id="app">
-			用户名：<input type="text" v-model="user.username"><br/>
-			密码：<input type="text" v-model="user.password"><br/>
-			<input type="button" v-on:click="fun" value="按钮">
-		</div>
-	</body>
-	<script>
-		//view model
-		new Vue({
-			el:"#app",
-			data:{
-				user:{
-					username:"test",
-					password:"123"
-				}
-			},
-			methods:{
-				fun:function(){
-					this.user.username="haha";
-					this.user.password="1234";
-				}
-			}
-		});
-	</script>
+		.main .nav{
+			height: 60px;
+			background: #47464a;
+			color: #999;
+			text-align: center;
+			line-height: 60px;
+  
+		}
 
+		.main .nav a{
+
+			margin: 0 40px;
+		}
+
+		.main .nav a:hover{
+			color: #fff;
+		}
+
+		.main .nav a.select{
+			color: #ef4238;
+
+		}
+
+		.main .container{
+			width: 300px;
+			height: 300px;
+			background: red;
+			/* margin: 0 auto; */
+
+		}
+
+	</style>
+</head>
+<body> 
+	<div class="main">
+
+		<nav class="nav">
+			<a class="select" href="">正在热映</a>
+			<a href="">即将上映</a>
+			<a href="">经典影片</a>
+		</nav>
+		<dic class="container">
+
+
+		</dic>
+	</div>
+
+	
+</body>
 </html>
