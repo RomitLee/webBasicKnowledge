@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/common.css" class="s">
 	<title>Document</title>
 	<style>
 		body{
@@ -20,7 +21,7 @@
 
 		.main{
 
-			line-height: 1.5;
+			line-height: 1.5; 
 		}
 
 		.main .nav{
@@ -120,10 +121,32 @@
 
 		.main .container .movies .movie-item .poster a img{
 			/* object-fit: cover; */
-			width: 100%;
-			height: 221px;
+			width: 160px;
+			height: 220px;
 			/* height: 260px; */
 
+		}
+
+		.main .container .movies .movie-item .name{
+
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding: 0 3px;
+			text-align: center;
+		}
+
+		.main .container .movies .movie-item .score{
+
+			color: #ffb400;
+			text-align: center;
+			line-height: 2.5;
+			font-style: italic;
+		} 
+
+		.main .container .movies .movie-item .score::first-letter{
+
+			font-size: 1.5em;
 		}
 
 
@@ -143,7 +166,7 @@
 				<div class="choose-item clearfix">
 					 <div class="left">类型：</div>
 					 <div class="right">
-						<ul>
+						<ul class="clearfix">
 							<li class="select"><a href="">Lorem.</a></li>
 							<li><a href="">Iste.</a></li>
 							<li><a href="">Vel.</a></li>
@@ -175,7 +198,7 @@
 				<div class="choose-item clearfix">
 					<div class="left">区域：</div>
 					<div class="right">
-					   <ul>
+					   <ul class="clearfix">
 						   <li class="select"><a href="">Lorem.</a></li>
 						   <li><a href="">Iste.</a></li>
 						   <li><a href="">Vel.</a></li>
@@ -207,7 +230,7 @@
 			   <div class="choose-item clearfix noline">
 				<div class="left">年代：</div>
 				<div class="right">
-				   <ul>
+				   <ul class="clearfix">
 					   <li class="select"><a href="">Lorem.</a></li>
 					   <li><a href="">Iste.</a></li>
 					   <li><a href="">Vel.</a></li>
@@ -234,10 +257,10 @@
 
 			</div>
 
-			<div class="movies">
+			<div class="movies clearfix">
 				<div class="movie-item">
 					<div class="poster"><a href=""><img src="./img/movie1.jpg" alt=""></a></div>
-					<div class="name"><a href="">唐人街探案3</a></div>
+					<div class="name"><a href="">唐人街街街街街街探案3</a></div>
 					<div class="score">9.4</div>
 				</div>
 				<div class="movie-item">
@@ -385,6 +408,21 @@
 					<div class="name"><a href="">21谋杀</a></div>
 					<div class="score">9.4</div>
 				</div>
+			</div>
+
+			<div class="pager clearfix">
+				<a href="">上一页</a>
+				<a href="">1</a>
+				<a href="">2</a>
+				<a class="select" href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<a href="">6</a>
+				<a href="">7</a>
+				<a href="">8</a>
+				<a href="">9</a>
+				<a href="">10</a>
+				<a href="">下一页</a>
 			</div>
 
 		</div>
